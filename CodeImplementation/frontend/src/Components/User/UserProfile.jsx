@@ -632,7 +632,7 @@ const UserProfile = () => {
     const func = async () => {
       setLoading(true);
       try {
-        const res = await fetch(`http://localhost:8080/profile/${id}`, {
+        const res = await fetch(`https://connverse-hcgzo.ondigitalocean.app/profile/${id}`, {
           method: "GET",
           credentials: "include",
           headers: {
@@ -739,7 +739,7 @@ const UserProfile = () => {
     setLoading(true);
         const func = async () => {
           try {
-            const res = await fetch(`http://localhost:8080/profile/update`, {
+            const res = await fetch(`https://connverse-hcgzo.ondigitalocean.app/profile/update`, {
               method: "POST",
               credentials: "include",
               headers: {
